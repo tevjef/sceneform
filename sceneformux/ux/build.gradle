@@ -15,7 +15,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.tevjef'
+group = "com.github.prolificinteractive"
+archivesBaseName = 'sceneform-ux'
+
 android {
     compileSdkVersion 28
     defaultConfig {
