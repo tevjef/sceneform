@@ -20,11 +20,10 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.ArraySet;
 import android.util.Log;
 import android.view.Gravity;
@@ -102,10 +101,7 @@ public class GltfActivity extends AppCompatActivity {
     WeakReference<GltfActivity> weakActivity = new WeakReference<>(this);
 
     ModelRenderable.builder()
-        .setSource(
-            this,
-            Uri.parse(
-                "https://storage.googleapis.com/ar-answers-in-search-models/static/Tiger/model.glb"))
+            .setSource(this,R.raw.out)
         .setIsFilamentGltf(true)
         .build()
         .thenAccept(
