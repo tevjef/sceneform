@@ -43,8 +43,8 @@ android {
 }
 
 dependencies {
-    api 'com.google.android.filament:filament-android:1.5.2'
-    api 'com.google.android.filament:gltfio-android:1.5.2'
+    api 'com.google.android.filament:filament-android:1.4.5'
+    api 'com.google.android.filament:gltfio-android:1.4.5'
     implementation files("../libs/libsceneform_runtime_schemas.jar")
 
     api "com.google.ar:core:1.16.0"
